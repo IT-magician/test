@@ -11,11 +11,15 @@
 </head>
 
 <body>
+    <input type="button" value="클릭" onclick="hello()">
 
     <script>
-//         const foo = "aaa";
-        document.write("test : " + test)
+        document.write("aaa : ");
+        document.append(test)
 
+        function hello() {
+            document.append(test)
+        }
     </script>
 </body>
 
