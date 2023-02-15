@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <input type="button" value="클릭1" onclick="hello()">
+    <input type="button" value="클릭1" v-on:click="hello(e)">
 
 
 
@@ -24,11 +24,8 @@
     </div>
 
     <script>
+        var isFlutterApp = "aaa"
 
-        if (window.isFlutterApp) alert(window.isFlutterApp)
-        function hello() {
-            alert(window.isFlutterApp)
-        }
 
 
         new Vue({
@@ -39,8 +36,13 @@
                 }
             },
             mounted() {
-                if (typeof (window.isFlutterApp) !== "undefined" && window.isFlutterApp !== null) { alert(window.isFlutterApp) }
+                if (typeof (isFlutterApp) !== "undefined" && isFlutterApp !== null) { alert(isFlutterApp) }
                 else alert("isFlutterApp 변수는 없습니다.")
+            },
+            methods: {
+                hello() {
+                    alert(isFlutterApp)
+                }
             },
         })
     </script>
