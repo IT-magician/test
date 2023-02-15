@@ -13,6 +13,10 @@
 </head>
 
 <body>
+    <input type="button" value="클릭1" onclick="hello()">
+
+
+
     <div id="app">
 
         {{hello}}
@@ -20,6 +24,12 @@
     </div>
 
     <script>
+
+        if (isFlutterApp) alert(isFlutterApp)
+        function hello() {
+            alert(isFlutterApp)
+        }
+
 
         new Vue({
             el: '#app',
