@@ -36,7 +36,9 @@
             },
             methods: {
                 clickEvent(e) {
-                    alert(window.isFlutterApp)
+//                     alert(window.isFlutterApp)
+                    const isUndefined = typeof window.setAccess_token == "undefined" || window.setAccess_token == null || window.setAccess_token == ""
+                    alert(isUndefined)
                     // hello = window.isFlutterApp
                 }
             },
