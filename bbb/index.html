@@ -37,8 +37,12 @@
             methods: {
                 clickEvent(e) {
 //                     alert(window.isFlutterApp)
-                    const isUndefined = typeof window.setAccess_token == "undefined" || window.setAccess_token == null || window.setAccess_token == ""
-                    alert(isUndefined)
+//                     const isUndefined = typeof window.setAccess_token == "undefined" || window.setAccess_token == null || window.setAccess_token == ""
+//                     alert(isUndefined)
+                    
+                    window.flutter_inappwebview.callHandler('setAccess_token', 'hi, taehun');
+                    
+                    
                     // hello = window.isFlutterApp
                 }
             },
