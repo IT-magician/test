@@ -7,28 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+    <script src="https://unpkg.com/vue@3"></script>
 </head>
 
 <body>
-    <input type="button" value="클릭1" v-on:click="hello(e)">
 
 
 
     <div id="app">
+        <input type="button" value="클릭1" @click="clickEvent">
 
         {{hello}}
 
     </div>
 
     <script>
-        new Vue({
-            el: '#app',
+
+
+        var app = Vue.createApp({
             data() {
                 return {
-                    hello: "aaaa",
+                    hello: "ABCDabcd"
                 }
             },
             mounted() {
@@ -36,11 +35,12 @@
                 else alert("window.isFlutterApp 변수는 없습니다.")
             },
             methods: {
-                hello() {
+                clickEvent(e) {
                     alert(window.isFlutterApp)
+                    // hello = window.isFlutterApp
                 }
             },
-        })
+        }).mount('#app')
     </script>
 </body>
 
