@@ -24,10 +24,6 @@
     </div>
 
     <script>
-        var isFlutterApp = "aaa"
-
-
-
         new Vue({
             el: '#app',
             data() {
@@ -36,12 +32,12 @@
                 }
             },
             mounted() {
-                if (typeof (isFlutterApp) !== "undefined" && isFlutterApp !== null) { alert(isFlutterApp) }
-                else alert("isFlutterApp 변수는 없습니다.")
+                if (typeof (window.isFlutterApp) !== "undefined" && window.isFlutterApp !== null) { alert(window.isFlutterApp) }
+                else alert("window.isFlutterApp 변수는 없습니다.")
             },
             methods: {
                 hello() {
-                    alert(isFlutterApp)
+                    alert(window.isFlutterApp)
                 }
             },
         })
