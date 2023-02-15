@@ -25,9 +25,9 @@
 
     <script>
 
-        if (isFlutterApp) alert(isFlutterApp)
+        if (window.isFlutterApp) alert(window.isFlutterApp)
         function hello() {
-            alert(isFlutterApp)
+            alert(window.isFlutterApp)
         }
 
 
@@ -39,7 +39,7 @@
                 }
             },
             mounted() {
-                if (typeof (isFlutterApp) !== "undefined" && isFlutterApp !== null) { alert(isFlutterApp) }
+                if (typeof (window.isFlutterApp) !== "undefined" && window.isFlutterApp !== null) { alert(window.isFlutterApp) }
                 else alert("isFlutterApp 변수는 없습니다.")
             },
         })
