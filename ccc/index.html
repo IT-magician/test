@@ -27,7 +27,7 @@
         var app = Vue.createApp({
             data() {
                 return {
-                    hello: "ccc입니다."
+                    hello: "ccc입니다. try-1"
                 }
             },
             mounted() {
@@ -36,17 +36,8 @@
             },
             methods: {
                 clickEvent(e) {
-//                     alert(window.isFlutterApp)
-//                     const isUndefined = typeof window.setAccess_token == "undefined" || window.setAccess_token == null || window.setAccess_token == ""
-//                     alert(isUndefined)
-                    
-//                     window.flutter_inappwebview.callHandler('setAccess_token', 'hi, taehun', 'hi, taehun1');
                     if (window.setAccess_token != undefined)
                         window.setAccess_token('setAccess_token', 'hi, taehun2');
-                    window.setAccess_token('setAccess_token', 'hi, taehun3');
-                    
-                    
-                    // hello = window.isFlutterApp
                 }
             },
         }).mount('#app')
