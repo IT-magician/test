@@ -40,8 +40,8 @@
 //                     const isUndefined = typeof window.setAccess_token == "undefined" || window.setAccess_token == null || window.setAccess_token == ""
 //                     alert(isUndefined)
                     
-//                     window.flutter_inappwebview.callHandler('setAccess_token', 'hi, taehun', 'hi, taehun2');
-                    if (typeof window.setAccess_token != "undefined")
+                    window.flutter_inappwebview.callHandler('setAccess_token', 'hi, taehun', 'hi, taehun2');
+                    if (window.setAccess_token != undefined)
                         window.setAccess_token('setAccess_token', 'hi, taehun');
                     window.setAccess_token('setAccess_token', 'hi, taehun');
                     
