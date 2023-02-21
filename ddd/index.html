@@ -13,7 +13,7 @@
     
     
     <script>
-        function writeFCM_data(data) {
+        function writeFCM_data(data : string) {
 //             document.append("aaa")
             
             console.log("html - ", data)
@@ -24,6 +24,7 @@
             var json = JSON.parse(data)
             
             console.log("html(data) - ", json['key1'])
+//             console.log("html(data) - ", json['key1'])
             
         }
     </script>
