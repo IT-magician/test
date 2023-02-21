@@ -18,8 +18,11 @@
             
             console.log("html - data", data)
             
+            var str = ""
             for (key in data)
-                document.append("key : " + key + ", " + data.key + "\n")
+                str += "key : " + key + ", " + data.key + "\n"
+            
+            alert(str)
         }
     </script>
 </body>
