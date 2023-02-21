@@ -17,7 +17,11 @@
 //             document.append("aaa")
             
             console.log("html - ", data)
-            console.log("html(data) - ", data['key1'])
+            
+            
+            var json = JSON.parse(stringify(data))
+            
+            console.log("html(data) - ", json['key1'])
             
         }
     </script>
