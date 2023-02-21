@@ -13,12 +13,11 @@
     
     
     <script>
-        function writeFCM_data(data) {
+        function writeFCM_data(notification, data) {
 //             document.append("aaa")
             
-            console.log("html - ", data)
-            
-            console.log("html - ", typeof(data))
+            console.log("html[data] - ", data)
+            console.log("html[data] - ", typeof(data))
             
             
             var json = JSON.parse(data)
@@ -26,6 +25,10 @@
             console.log("html(data) - ", json['key1'])
             console.log("html(data) - ", json.key1)
             
+            
+            
+            console.log("html[notification] - ", notification)
+            console.log("html[notification] - ", typeof(notification))
         }
     </script>
 </body>
